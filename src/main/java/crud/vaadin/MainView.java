@@ -34,10 +34,7 @@ public class MainView extends VerticalLayout {
 		}
 
 		void filterByName(String filter) {
-			setItems(vaadinQuery -> {
-				var springPageRequest = VaadinSpringDataHelpers.toSpringPageRequest(vaadinQuery);
-				return service.findPersons(filter, springPageRequest).stream();
-			});
+			setItemsPageable(pageable -> service.findPersons(filter, pageable));
 		}
 	}
 

@@ -16,7 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <version.vaadin>24.6.6</version.vaadin>
+        <version.vaadin>24.7.0.beta2</version.vaadin>
         <start-class>crud.Application</start-class>
     </properties>
 
